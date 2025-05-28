@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amo tu</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./estilos/aviao.css">
+    <link rel="stylesheet" href="aviao.css">
 </head>
 <body>
+
     <nav class="bg-white bg-opacity-90 shadow-md py-4 px-6 sticky top-0 z-10">
         <div class="container mx-auto flex flex-wrap items-center justify-between">
             <div class="flex items-center">
@@ -19,29 +20,25 @@
             </button>
             <div id="menu" class="hidden w-full md:block md:w-auto">
                 <ul class="flex flex-col md:flex-row md:space-x-6 mt-4 md:mt-0">
-                    <li><a href="index.html" class="nav-link text-xl text-rose-800 hover:text-rose-600">Início</a></li>
-                    <li><a href="coracao.html" class="nav-link text-xl text-rose-800 hover:text-rose-600">Coração</a></li>
-                    <li><a href="matrix.html" class="nav-link text-xl text-rose-800 hover:text-rose-600">Te amo</a></li>
-                    <li><a href="flor.html" class="nav-link text-xl text-rose-800 hover:text-rose-600">Uma flor</a></li>
-                    <li><a href="aviao.html" class="nav-link text-xl text-rose-800 hover:text-rose-600">Avião</a></li>
+                    <li><a href="index.html" class="nav-link text-xl text-rose-800 hover:text-rose-600 block py-2 md:py-0">Início</a></li>
+                    <li><a href="coracao.html" class="nav-link text-xl text-rose-800 hover:text-rose-600 block py-2 md:py-0">Coração</a></li>
+                    <li><a href="matrix.html" class="nav-link text-xl text-rose-800 hover:text-rose-600 block py-2 md:py-0">Te amo</a></li>
+                    <li><a href="flor.html" class="nav-link text-xl text-rose-800 hover:text-rose-600 block py-2 md:py-0">Uma flor</a></li>
+                    <li><a href="aviao.html" class="nav-link text-xl text-rose-800 hover:text-rose-600 block py-2 md:py-0">Avião</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <div class="sky">
-        <div class="nuvem">
-
+        <div class="nuvem"> </div>
+        <div class="mundo"> 
+            <div class="aviao-area">
+                <img src="aviao2.png" class="aviao aviao-frame1" alt="Avião 1">
+                <img src="aviao3.png" class="aviao aviao-frame2" alt="Avião 2">
+            </div>
         </div>
-
+        <div class="montanha"> </div>
     </div>
-
-    <script>
-        const menuToggle = document.getElementById('menu-toggle');
-        const menu = document.getElementById('menu');
-        menuToggle.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
-        });
-    </script>
 </body>
 </html>

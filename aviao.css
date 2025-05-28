@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.sky{
+    width: 100%;
+    height: 100vh;
+    background-color: #00ccFF;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.nuvem{
+    width: 500%;
+    height: 30vh;
+    background-image: url(nuvem.png);
+    background-size: 30vh;
+    background-repeat: repeat-x;
+    animation: nuvem 50s linear infinite;
+}
+
+@keyframes nuvem{
+    0% {
+        transform: translateX(-50%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.montanha{
+    position: absolute;
+    bottom: 0;
+    width: 500%;
+    height: 50vh;
+    background-image: url(montanha.png);
+    background-size: 90vh;
+    background-repeat: repeat-x;
+    animation: nuvem 20s linear infinite;
+}
+
+@keyframes montanha{
+    0% {
+        transform: translateX(-50%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.aviao-area {
+    width: 480px;
+    height: 540px;
+    overflow: hidden;
+    background: transparent;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+.aviao {
+    position: absolute;
+    width: 480px;
+    height: 540px;
+    left: 0;
+    top: 0;
+    object-fit: contain;
+}
+
+.aviao-frame1 {
+    animation: frame1Anim 0.5s steps(1) infinite;
+}
+.aviao-frame2 {
+    animation: frame2Anim 0.5s steps(1) infinite;
+}
+
+@keyframes frame1Anim {
+    0%, 49.9% { opacity: 1; }
+    50%, 100% { opacity: 0; }
+}
+@keyframes frame2Anim {
+    0%, 49.9% { opacity: 0; }
+    50%, 100% { opacity: 1; }
+}
+
+.romantic-font {
+    font-family: 'Dancing Script', cursive;
+}
