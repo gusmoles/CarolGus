@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coração Neon com Foguetes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./estilos/coracao.css">
+</head>
+<body>
+    <nav class="bg-white bg-opacity-90 shadow-md py-4 px-6 sticky top-0 z-10">
+        <div class="container mx-auto flex flex-wrap items-center justify-between">
+            <div class="flex items-center">
+                <span class="romantic-font text-2xl font-bold text-rose-700">Site Caroooool</span>
+            </div>
+            <button id="menu-toggle" class="md:hidden text-rose-700 focus:outline-none" aria-label="Abrir menu">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+            <div id="menu" class="hidden w-full md:block md:w-auto">
+                <ul class="flex flex-col md:flex-row md:space-x-6 mt-4 md:mt-0">
+                    <li><a href="index.html" class="nav-link text-xl text-rose-800 hover:text-rose-600">Início</a></li>
+                    <li><a href="coracao.html" class="nav-link text-xl text-rose-800 hover:text-rose-600">Coração</a></li>
+                    <li><a href="matrix.html" class="nav-link text-xl text-rose-800 hover:text-rose-600">Te amo</a></li>
+                    <li><a href="flor.html" class="nav-link text-xl text-rose-800 hover:text-rose-600">Uma flor</a></li>
+                    <li><a href="aviao.html" class="nav-link text-xl text-rose-800 hover:text-rose-600">Avião</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="centralizar">
+        <div class="stars" id="stars"></div>
+        <div class="heart" id="heart">
+            <svg class="heart-svg" viewBox="0 0 512 512">
+                <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path>
+            </svg>
+        </div>
+        <div class="te-amo" id="teAmo">TE AMO</div>
+    </div>
+
+    <script src="coracao.js"></script>
+</body>
+</html> 

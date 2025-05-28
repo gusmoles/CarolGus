@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TE AMO Matrix + Fumaça</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./estilos/style.css">
+    <link rel="stylesheet" href="./estilos/matrix.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-md py-4 px-6 sticky top-0 z-10">
+        <div class="container mx-auto flex flex-wrap items-center justify-between">
+            <div class="flex items-center">
+                <span class="romantic-font text-2xl font-bold text-rose-700">Site Caroooool</span>
+            </div>
+            <button id="menu-toggle" class="md:hidden text-rose-700 focus:outline-none" aria-label="Abrir menu">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+            <div id="menu" class="hidden w-full md:block md:w-auto">
+                <ul class="flex flex-col md:flex-row md:space-x-6 mt-4 md:mt-0">
+                    <li><a href="index.html" class="nav-link text-lg text-rose-800 hover:text-rose-600 block py-2 md:py-0">Início</a></li>
+                    <li><a href="coracao.html" class="nav-link text-lg text-rose-800 hover:text-rose-600 block py-2 md:py-0">Coração</a></li>
+                    <li><a href="matrix.html" class="nav-link text-lg text-rose-800 hover:text-rose-600 block py-2 md:py-0">Te amo</a></li>
+                    <li><a href="flor.html" class="nav-link text-lg text-rose-800 hover:text-rose-600 block py-2 md:py-0">Uma flor</a></li>
+                    <li><a href="aviao.html" class="nav-link text-lg text-rose-800 hover:text-rose-600 block py-2 md:py-0">Avião</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+    <canvas id="matrix"></canvas>
+    <canvas id="effect"></canvas>
+    <script src="matrix.js"></script>
+</body>
+</html>

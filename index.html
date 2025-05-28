@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Dia dos Namorados</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./estilos/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="bg-white bg-opacity-90 shadow-md py-4 px-6 sticky top-0 z-10">
+        <div class="container mx-auto flex flex-wrap items-center justify-between">
+            <div class="flex items-center">
+                <span class="romantic-font text-2xl font-bold text-rose-700">Site Caroooool</span>
+            </div>
+            <button id="menu-toggle" class="md:hidden text-rose-700 focus:outline-none" aria-label="Abrir menu">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+            <div id="menu" class="hidden w-full md:block md:w-auto">
+                <ul class="flex flex-col md:flex-row md:space-x-6 mt-4 md:mt-0">
+                    <li><a href="#" class="nav-link text-lg text-rose-800 hover:text-rose-600 block py-2 md:py-0">Início</a></li>
+                    <li><a href="coracao.html" class="nav-link text-lg text-rose-800 hover:text-rose-600 block py-2 md:py-0">Coração</a></li>
+                    <li><a href="matrix.html" class="nav-link text-lg text-rose-800 hover:text-rose-600 block py-2 md:py-0">Te amo</a></li>
+                    <li><a href="flor.html" class="nav-link text-lg text-rose-800 hover:text-rose-600 block py-2 md:py-0">Uma flor</a></li>
+                    <li><a href="aviao.html" class="nav-link text-lg text-rose-800 hover:text-rose-600 block py-2 md:py-0">Avião</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        <!-- Header -->
+        <header class="text-center mb-12 pt-8">
+            <h1 class="romantic-font text-5xl md:text-6xl font-bold text-rose-800 mb-4">Para o Amor da Minha Vida</h1>
+            <p class="text-xl text-rose-700">Feliz Dia dos Namorados ❤️</p>
+        </header>
+
+        <!-- Main Content -->
+        <main class="max-w-4xl mx-auto">
+            <!-- Hero Section -->
+            <section class="flex flex-col md:flex-row items-center justify-between gap-8 mb-16">
+                <div class="w-full md:w-1/2 text-center md:text-left">
+                    <h2 class="romantic-font text-3xl font-bold text-rose-800 mb-6">Meu Amor,</h2>
+                    <p class="text-lg text-rose-900 mb-6">Cada momento ao seu lado é especial. Criei este site para expressar todo o meu amor por você.</p>
+                    <div class="heart text-5xl mb-6 inline-block">❤️</div>
+                    <div>
+                        <button class="btn-love bg-rose-600 hover:bg-rose-700 text-white font-bold py-3 px-8 rounded-full shadow-lg">
+                            Clique para uma Surpresa
+                        </button>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 flex justify-center">
+                    <div class="bg-white p-4 rounded-lg shadow-lg">
+                        <div class="bg-rose-100 p-8 rounded-lg flex items-center justify-center">
+                            <div class="text-center">
+                                <img src="FotoCarol.jpeg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Call to Action -->
+            <section class="text-center mb-16">
+                <div class="bg-rose-100 p-6 rounded-lg shadow-lg">
+                    <h2 class="romantic-font text-2xl font-bold text-rose-800 mb-4">Mensagem para my love</h2>
+                    <p class="text-lg text-rose-700 mb-6">Tenho uma surpresa especial preparada para você.</p>
+                    <button id="surpriseBtn" class="btn-love bg-rose-600 hover:bg-rose-700 text-white font-bold py-3 px-8 rounded-full shadow-lg">
+                        Revelar Surpresa
+                    </button>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="text-center text-rose-800 py-6">
+            <p class="romantic-font text-2xl mb-2">Com todo meu amor,</p>
+            <p class="text-xl font-semibold">Tikuriko ❤️</p>
+        </footer>
+    </div>
+
+    <!-- Modal for Surprise -->
+    <div id="surpriseModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-lg p-8 max-w-md w-full mx-4">
+            <div class="text-center">
+                <div class="text-6xl mb-4 heart">❤️</div>
+                <h3 class="romantic-font text-3xl font-bold text-rose-800 mb-4">Carol</h3>
+                <p class="text-rose-700 mb-6">Você é o amor da minha vida e quero passar cada momento ao seu lado.</p>
+                <p class="text-rose-700 mb-6">Eu te amo plus max infinito ao quadrado vezes infinito e isso não é nem 0,00000000000000000000000000000000001% do meu amor por você</p>
+                <button id="closeModal" class="bg-rose-600 hover:bg-rose-700 text-white font-bold py-2 px-6 rounded-full">
+                    Fechar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
