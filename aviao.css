@@ -24,9 +24,7 @@
     0% {
         transform: translateX(-50%);
     }
-    100%{
-        transform: translateX(0);
-    }
+    100%{ transform: translateX(0);}
 }
 
 .montanha{
@@ -37,16 +35,12 @@
     background-image: url(montanha.png);
     background-size: 90vh;
     background-repeat: repeat-x;
-    animation: nuvem 20s linear infinite;
+    animation: montanha 20s linear infinite;
 }
 
 @keyframes montanha{
-    0% {
-        transform: translateX(-50%);
-    }
-    100%{
-        transform: translateX(0);
-    }
+    0% { transform: translateX(-50%); }
+    100%{ transform: translateX(0);}
 }
 
 .aviao-area {

@@ -20,11 +20,11 @@
             </button>
             <div id="menu" class="hidden w-full md:block md:w-auto">
                 <ul class="flex flex-col md:flex-row md:space-x-6 mt-4 md:mt-0">
-                    <li><a href="index.html" class="nav-link text-xl text-rose-800 hover:text-rose-600 block py-2 md:py-0">Início</a></li>
-                    <li><a href="coracao.html" class="nav-link text-xl text-rose-800 hover:text-rose-600 block py-2 md:py-0">Coração</a></li>
-                    <li><a href="matrix.html" class="nav-link text-xl text-rose-800 hover:text-rose-600 block py-2 md:py-0">Te amo</a></li>
-                    <li><a href="flor.html" class="nav-link text-xl text-rose-800 hover:text-rose-600 block py-2 md:py-0">Uma flor</a></li>
-                    <li><a href="aviao.html" class="nav-link text-xl text-rose-800 hover:text-rose-600 block py-2 md:py-0">Avião</a></li>
+                    <li><a href="index.html" class="nav-link text-lg text-rose-800 hover:text-rose-600 block py-2 md:py-0">Início</a></li>
+                    <li><a href="coracao.html" class="nav-link text-lg text-rose-800 hover:text-rose-600 block py-2 md:py-0">Coração</a></li>
+                    <li><a href="matrix.html" class="nav-link text-lg text-rose-800 hover:text-rose-600 block py-2 md:py-0">Te amo</a></li>
+                    <li><a href="flor.html" class="nav-link text-lg text-rose-800 hover:text-rose-600 block py-2 md:py-0">Uma flor</a></li>
+                    <li><a href="aviao.html" class="nav-link text-lg text-rose-800 hover:text-rose-600 block py-2 md:py-0">Avião</a></li>
                 </ul>
             </div>
         </div>
@@ -40,5 +40,13 @@
         </div>
         <div class="montanha"> </div>
     </div>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
